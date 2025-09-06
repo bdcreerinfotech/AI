@@ -36,12 +36,12 @@ export default function Services() {
   ];
 
   return (
-    <div className="flex justify-center py-[40px] box-content">
+    <div className="flex justify-center max-sm:py-[40px] py-[80px] box-content">
       <div className="box-layout flex-col">
-        <h1 className="text-[52px]/[1.3] font-bold mb-8 ">
+        <h1 className="max-sm:text-[32px]/[1.3] text-[52px]/[1.3] font-bold mb-8 ">
           Unlock AI-Driven Innovation <br /> for Your Business in India
         </h1>
-        <div className="flex flex-wrap justify-between gap-15">
+        <div className="flex flex-wrap justify-between gap-15 max-sm:!gap-10">
           {serviceList.map((item, idx) => (
             <ServiceCard
               key={idx}

@@ -25,14 +25,18 @@ export default function ServicesSlider() {
   ];
 
   return (
-    <div className="flex justify-center py-[40px]">
+    <div className="flex justify-center max-sm:!py-[40px] py-[80px]">
       <div className="box-layout flex-col justify-center">
         <div className="text-center">
-          <h1 className="text-[52px] font-bold mb-6 ">
+          <h1 className="max-sm:!text-[32px] text-[52px] font-bold mb-6 max-sm:!mb-3">
             AI Development Services in India
           </h1>
-          <p className="mb-14">
+          <p className="block mb-14 max-sm:!hidden">
             We help businesses create all different flavors of <br /> Innovative
+            AI Services in India.
+          </p>
+          <p className="mb-14 hidden max-sm:!block max-sm:!text-base">
+            We help businesses create all different flavors of Innovative
             AI Services in India.
           </p>
         </div>
@@ -41,7 +45,7 @@ export default function ServicesSlider() {
             modules={[Autoplay]}
             ref={swiperRef}
             slidesPerView={1}
-            spaceBetween={100}
+            spaceBetween={200}
             loop={true}
             autoplay={{
               delay: 2500, // time between slides in ms

@@ -12,7 +12,7 @@ export default function CompanySlider() {
   ];
 
   return (
-    <div className="relative h-[100px] w-[100%] box-content py-[40px] pt-[80px] overflow-hidden place-items-center">
+    <div className="relative h-[100px] w-[100%] box-content max-sm:!py-[40px] py-[80px] pt-[80px] overflow-hidden place-items-center">
       <div className="slide-track">
         {slider.map((item, idx) => (
           <div className="slider-card contrast-[.4]" key={idx}>
